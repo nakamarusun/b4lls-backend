@@ -4,7 +4,8 @@
   "description": "This is the greatest b4lls backend of all time",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,11 @@
   },
   "homepage": "https://github.com/nakamarusun/b4lls-backend#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase-admin": "^10.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
