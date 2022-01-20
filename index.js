@@ -2,12 +2,7 @@ const {Storage} = require('@google-cloud/storage');
 const express = require("express");
 const app = new express();
 
-
-const storage = new Storage({
-  keyFilename: !process.env.GOOGLE_APPLICATION_CREDENTIALS ?
-  "./b4lls-game-firebase-adminsdk-dh5qk-5177e532eb.json":
-  process.env.GOOGLE_APPLICATION_CREDENTIALS,
-});
+const storage = new Storage();
 
 let bucketName = "b4lls-cloud";
 
